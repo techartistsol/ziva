@@ -1,0 +1,13 @@
+
+sel = mc.ls(sl=True)
+skin = 'body_skin_bothside'
+
+for node in sel:
+    print node
+    mc.select(node)
+    mc.select(skin, add = True)
+    mm.eval("ziva -a")
+
+
+
+
